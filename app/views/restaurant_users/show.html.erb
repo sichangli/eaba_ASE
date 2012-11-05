@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Account name:</b>
+  <%= @restaurant_user.account_name %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @restaurant_user.name %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @restaurant_user.password %>
+</p>
+
+<p>
+  <b>License:</b>
+  <%= @restaurant_user.license %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @restaurant_user.phone %>
+</p>
+
+<p>
+  <b>Restaurant:</b>
+  <%= @restaurant_user.restaurant_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_restaurant_user_path(@restaurant_user) %> |
+<%= link_to 'Back', restaurant_users_path %>

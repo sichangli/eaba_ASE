@@ -1,0 +1,33 @@
+<h1>Listing restaurant_users</h1>
+
+<table>
+  <tr>
+    <th>Account name</th>
+    <th>Name</th>
+    <th>Password</th>
+    <th>License</th>
+    <th>Phone</th>
+    <th>Restaurant</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @restaurant_users.each do |restaurant_user| %>
+  <tr>
+    <td><%= restaurant_user.account_name %></td>
+    <td><%= restaurant_user.name %></td>
+    <td><%= restaurant_user.password %></td>
+    <td><%= restaurant_user.license %></td>
+    <td><%= restaurant_user.phone %></td>
+    <td><%= restaurant_user.restaurant_id %></td>
+    <td><%= link_to 'Show', restaurant_user %></td>
+    <td><%= link_to 'Edit', edit_restaurant_user_path(restaurant_user) %></td>
+    <td><%= link_to 'Destroy', restaurant_user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Restaurant user', new_restaurant_user_path %>
