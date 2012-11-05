@@ -1,4 +1,14 @@
 Eaba::Application.routes.draw do
+  resources :restaurant_to_client_reviews
+
+  resources :client_to_restaurant_reviews
+
+  resources :administrators
+
+  resources :orders
+
+  resources :restaurants
+
   resources :restaurant_users
 
   resources :client_users

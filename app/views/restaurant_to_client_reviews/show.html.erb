@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Client:</b>
+  <%= @restaurant_to_client_review.client_id %>
+</p>
+
+<p>
+  <b>Restaurant:</b>
+  <%= @restaurant_to_client_review.restaurant_id %>
+</p>
+
+<p>
+  <b>Review:</b>
+  <%= @restaurant_to_client_review.review %>
+</p>
+
+<p>
+  <b>Score:</b>
+  <%= @restaurant_to_client_review.score %>
+</p>
+
+
+<%= link_to 'Edit', edit_restaurant_to_client_review_path(@restaurant_to_client_review) %> |
+<%= link_to 'Back', restaurant_to_client_reviews_path %>

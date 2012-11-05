@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Client:</b>
+  <%= @order.client_id %>
+</p>
+
+<p>
+  <b>Restaurant:</b>
+  <%= @order.restaurant_id %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @order.content %>
+</p>
+
+<p>
+  <b>Zipcode:</b>
+  <%= @order.zipcode %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @order.address %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @order.phone %>
+</p>
+
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

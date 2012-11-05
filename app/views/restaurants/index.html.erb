@@ -1,0 +1,51 @@
+<h1>Listing restaurants</h1>
+
+<table>
+  <tr>
+    <th>Camis</th>
+    <th>Dba</th>
+    <th>Boro</th>
+    <th>Building</th>
+    <th>Street</th>
+    <th>Zipcode</th>
+    <th>Phone</th>
+    <th>Cuisinecode</th>
+    <th>Inspdate</th>
+    <th>Action</th>
+    <th>Violcode</th>
+    <th>Score</th>
+    <th>Currentgrade</th>
+    <th>Gradedate</th>
+    <th>Recorddate</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @restaurants.each do |restaurant| %>
+  <tr>
+    <td><%= restaurant.camis %></td>
+    <td><%= restaurant.dba %></td>
+    <td><%= restaurant.boro %></td>
+    <td><%= restaurant.building %></td>
+    <td><%= restaurant.street %></td>
+    <td><%= restaurant.zipcode %></td>
+    <td><%= restaurant.phone %></td>
+    <td><%= restaurant.cuisinecode %></td>
+    <td><%= restaurant.inspdate %></td>
+    <td><%= restaurant.action %></td>
+    <td><%= restaurant.violcode %></td>
+    <td><%= restaurant.score %></td>
+    <td><%= restaurant.currentgrade %></td>
+    <td><%= restaurant.gradedate %></td>
+    <td><%= restaurant.recorddate %></td>
+    <td><%= link_to 'Show', restaurant %></td>
+    <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td>
+    <td><%= link_to 'Destroy', restaurant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Restaurant', new_restaurant_path %>

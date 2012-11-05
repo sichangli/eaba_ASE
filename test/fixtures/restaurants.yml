@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  camis: 
+  dba: MyString
+  boro: 
+  building: 
+  street: MyString
+  zipcode: MyString
+  phone: MyString
+  cuisinecode: 
+  inspdate: MyString
+  action: MyString
+  violcode: 
+  score: 
+  currentgrade: MyString
+  gradedate: MyString
+  recorddate: MyString
+
+two:
+  camis: 
+  dba: MyString
+  boro: 
+  building: 
+  street: MyString
+  zipcode: MyString
+  phone: MyString
+  cuisinecode: 
+  inspdate: MyString
+  action: MyString
+  violcode: 
+  score: 
+  currentgrade: MyString
+  gradedate: MyString
+  recorddate: MyString
