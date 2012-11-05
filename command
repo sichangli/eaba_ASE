@@ -1,9 +1,11 @@
-rails generate scaffold Restaurant camis:int dba:string boro:int building:int street:string zipcode:string phone:string cuisinecode:int inspdate:string action:string violcode:int score:int currentgrade:string gradedate:string recorddate:string
+rails generate scaffold Restaurant camis:integer dba:string boro:integer building:integer street:string zipcode:string phone:string cuisinecode:integer inspdate:string action:string violcode:integer score:integer currentgrade:string gradedate:string recorddate:string
 
-rails generate scaffold ClientToRestaurantReview client_id:int restaurant_id:int review:text score:int 
+rails generate scaffold ClientToRestaurantReview client_id:integer restaurant_id:integer review:text score:integer 
 
-rails generate scaffold RestaurantToClientReview client_id:int restaurant_id:int review:text score:int 
+rails generate scaffold RestaurantToClientReview client_id:integer restaurant_id:integer review:text score:integer 
 
-rails generate scaffold Order client_id:int restaurant_id:int content:text zipcode:string address:string phone:string 
+rails generate scaffold Order client_id:integer restaurant_id:integer content:text zipcode:string address:string phone:string 
 
 rails generate scaffold Administrator account_name:string name:string password:string
+
+rails generate scaffold RestaurantUser account_name:string name:string password:string license:string phone:string restaurant_id:integer

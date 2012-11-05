@@ -1,16 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  client_id: 
-  restaurant_id: 
+  client_id: 1
+  restaurant_id: 1
   content: MyText
   zipcode: MyString
   address: MyString
   phone: MyString
 
 two:
-  client_id: 
-  restaurant_id: 
+  client_id: 1
+  restaurant_id: 1
   content: MyText
   zipcode: MyString
   address: MyString

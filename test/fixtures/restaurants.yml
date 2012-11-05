@@ -1,35 +1,35 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  camis: 
+  camis: 1
   dba: MyString
-  boro: 
-  building: 
+  boro: 1
+  building: 1
   street: MyString
   zipcode: MyString
   phone: MyString
-  cuisinecode: 
+  cuisinecode: 1
   inspdate: MyString
   action: MyString
-  violcode: 
-  score: 
+  violcode: 1
+  score: 1
   currentgrade: MyString
   gradedate: MyString
   recorddate: MyString
 
 two:
-  camis: 
+  camis: 1
   dba: MyString
-  boro: 
-  building: 
+  boro: 1
+  building: 1
   street: MyString
   zipcode: MyString
   phone: MyString
-  cuisinecode: 
+  cuisinecode: 1
   inspdate: MyString
   action: MyString
-  violcode: 
-  score: 
+  violcode: 1
+  score: 1
   currentgrade: MyString
   gradedate: MyString
   recorddate: MyString
